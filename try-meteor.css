@@ -1,0 +1,33 @@
+/* CSS declarations go here */
+#chat, #form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, #form {
+  text-align: center;
+}
+
+#form {
+  margin-top: 15px;
+}
+
+#chat {
+  background-color: #C3D9FF;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.line {
+  border-bottom: 1px solid #4096EE;
+}
+
+.byline {
+  float: left;
+  width: 100px;
+  overflow: hidden;
+}
+
+.text {
+  
+}

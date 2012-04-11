@@ -1,0 +1,30 @@
+<head>
+  <title>Meteor Chat Test</title>
+</head>
+
+<body>
+  <h1>Meteor Chat</h1>
+  {{> chat}}
+</body>
+
+<template name="chat">
+  <div id="chat">
+    {{#each lines}}
+      {{> line}}
+    {{/each}}
+    {{> form}}
+  </div>
+</template>
+<template name="form">
+  <form id="form" action="">
+    <input type="text" name="author" placeholder="nickname" />
+    <input type="text" name="text" placeholder="message" />
+    <input type="submit" />
+  </form>
+</template>
+<template name="line">
+  <div class="line">
+    <span class="byline">{{author}}</span>
+    <span class="text">{{text}}</span>
+  </div>
+</template>
